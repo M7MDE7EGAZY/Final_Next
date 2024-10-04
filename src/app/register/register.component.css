@@ -1,0 +1,24 @@
+.card {
+    justify-content: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+:host {
+    display: flex;
+    justify-content: center;
+    margin: 100px 0px;
+}
+  
+
+.spiner {
+    position: absolute;
+    z-index: 1;
+    margin-top: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }

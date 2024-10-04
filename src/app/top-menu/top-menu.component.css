@@ -1,0 +1,21 @@
+.companyName {
+    font-size: 110%;
+} 
+
+/* .nav-div {
+    overflow: inherit;
+
+} */
+
+.link-style {
+    text-decoration: none;
+    white-space: normal;
+}
+
+.example-fill-remaining-space {
+    flex: 1 1 auto;
+  }
+
+/* .nav-button {
+    min-width: min-content;
+} */
