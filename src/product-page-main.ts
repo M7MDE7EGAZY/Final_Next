@@ -1,6 +1,7 @@
 import { enableProdMode } from '@angular/core';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { AppComponent } from './app/app.component';
+import { ProductPageComponent } from './app/product-page/product-page.component';
 
-bootstrapApplication(AppComponent)
+
+bootstrapApplication(ProductPageComponent)
   .catch(err => console.error(err));
