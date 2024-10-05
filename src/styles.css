@@ -19671,3 +19671,7 @@ iframe {
 .color-orange {
   color: var(--bs-warning) !important;
 }
+
+.booking-btn {
+  background-color: var(--bs-warning);
+}
