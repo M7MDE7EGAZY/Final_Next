@@ -19506,7 +19506,7 @@ iframe {
   top: 2.5rem;
   width: 20rem;
   height: 0.8125rem;
-  background-image: url(../img/hero/shape.svg);
+  background-image: url(./assets/img/hero/shape.svg);
   background-size: contain;
   z-index: -1;
 }
@@ -19669,4 +19669,25 @@ iframe {
 
 .color-orange {
   color: var(--bs-warning) !important;
+}
+
+.booking-btn {
+  background-color: var(--bs-warning);
+  border-radius: 13px;
+  height: 53px;
+  border: none;
+  font-size: 22px;
+  font-family: 'ubuntu titling', sans-serif;
+  max-width: 18%;
+  margin: 40px auto 20px auto;
+  color: #ffffff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.22);
+  text-decoration: none;
+  transition: 0.5s;
+  min-width: 200px;
+}
+
+.booking-btn:hover {
+  background-color: #ffffff;
+  color: #ffb800;
 }
