@@ -27,7 +27,7 @@
                 "input": "public"
               }
             ],
-            "styles": ["src/styles.css", "src/theme.css"],
+            "styles": ["src/styles.css"],
             "scripts": [
               "src/assets/js/@popperjs/popper.min.js",
               "src/assets/js/bootstrap/bootstrap.min.js",
@@ -97,8 +97,7 @@
             ],
             "styles": 
             [
-              "src/styles.css",
-              "src/theme.css"
+              "src/styles.css"
           ],
             "scripts": [
               "src/assets/js/@popperjs/popper.min.js",
