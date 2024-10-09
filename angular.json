@@ -1,163 +1,49 @@
 {
-  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-  "version": 1,
-  "newProjectRoot": "projects",
+  ...
   "projects": {
     "travel-agency": {
-      "projectType": "application",
-      "root": "",
-      "sourceRoot": "src",
-      "prefix": "app",
+      ...
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-angular:browser",
+          ...
+        },
+        "build-index": {
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/travel-agency",
+            "outputPath": "dist/travel-agency/index",
             "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": ["zone.js"],
-            "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": [],
-            "inlineStyleLanguage": "css"
+            ...
           },
           "configurations": {
             "production": {
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "aot": true,
-              "vendorChunk": false,
-              "buildOptimizer": true
+              ...
             },
             "development": {
-              "optimization": false,
-              "outputHashing": "none",
-              "sourceMap": true,
-              "namedChunks": true,
-              "aot": false,
-              "vendorChunk": true,
-              "buildOptimizer": false
+              ...
             }
           },
           "defaultConfiguration": "production"
         },
         "build-product-page": {
-          "builder": "@angular-devkit/build-angular:browser",
+          "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/product-page",
+            "outputPath": "dist/travel-agency/product-page",
             "index": "src/product-page.html",
-            "main": "src/product-page-main.ts",
-            "polyfills": ["zone.js"],
-            "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/product-page.css"
-            ],
-            "scripts": [],
-            "inlineStyleLanguage": "css"
+            ...
           },
           "configurations": {
             "production": {
-              "fileReplacements": [
-              ],
-              "optimization": true,
-              "outputHashing": "all",
-              "sourceMap": false,
-              "namedChunks": false,
-              "aot": true,
-              "vendorChunk": false,
-              "buildOptimizer": true
+              ...
             },
             "development": {
-              "optimization": false,
-              "outputHashing": "none",
-              "sourceMap": true,
-              "namedChunks": true,
-              "aot": false,
-              "vendorChunk": true,
-              "buildOptimizer": false
+              ...
             }
           },
           "defaultConfiguration": "production"
         },
-        "serve": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "buildTarget":"travel-agency:build"
-          },
-          "configurations": {
-            "production": {
-              "buildTarget":"travel-agency:build:production"
-            },
-            "development": {
-              "buildTarget":"travel-agency:build:development"
-            }
-          }
-        },
-        "serve-product-page": {
-          "builder": "@angular-devkit/build-angular:dev-server",
-          "options": {
-            "buildTarget":"travel-agency:build-product-page"
-          },
-          "configurations": {
-            "production": {
-              "buildTarget":"travel-agency:build-product-page:production"
-            },
-            "development": {
-              "buildTarget":"travel-agency:build-product-page:development"
-            }
-          }
-        },
-        "extract-i18n": {
-          "builder": "@angular-devkit/build-angular:extract-i18n",
-          "options": {
-            "buildTarget":"travel-agency:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": ["zone.js", "zone.js/testing"],
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "./karma.conf.js",
-            "assets": [
-              "src/favicon.ico",
-              "src/assets"
-            ],
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": []
-          }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
+        ...
       }
     }
   },
-  "cli": {
-    "analytics": false
-  }
+  ...
 }
