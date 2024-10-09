@@ -3,16 +3,14 @@ import { RouterModule, Routes } from '@angular/router';
 import { AppComponent } from './app.component';
 import { ProductPageComponent } from './product-page/product-page.component';
 
-export const routes: Routes = [
+const routes: Routes = [
   {
     path: '',
-    component: AppComponent,
-    children: [
-      {
-        path: 'product-page',
-        component: ProductPageComponent
-      }
-    ]
+    component: AppComponent
+  },
+  {
+    path: 'product-page',
+    component: ProductPageComponent
   }
 ];
 
