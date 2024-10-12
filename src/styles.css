@@ -2907,8 +2907,8 @@ textarea.form-control-lg {
 }
 
 .form-select:focus {
-  border-color: #f8d280;
-  outline: 0;
+  /*border-color: #f8d280;*/
+  outline: none !important;
   -webkit-box-shadow: 0 0 0 0.25rem rgba(241, 165, 1, 0.25);
   box-shadow: 0 0 0 0.25rem rgba(241, 165, 1, 0.25);
 }
@@ -3676,8 +3676,6 @@ textarea.form-control.is-invalid {
 .btn-check:focus + .btn,
 .btn:focus {
   outline: 0;
-  -webkit-box-shadow: 0 0 0 0.25rem rgba(241, 165, 1, 0.25);
-  box-shadow: 0 0 0 0.25rem rgba(241, 165, 1, 0.25);
 }
 
 .btn:disabled,
@@ -8261,7 +8259,16 @@ fieldset:disabled .btn {
 }
 
 .border-secondary {
-  border-color: #5e6282 !important;
+  border-color: #5e628220 !important;
+  background: #f1f2fe;
+  border-radius: 15px;
+  padding: 10px 15px;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center
 }
 
 .border-success {
@@ -20324,4 +20331,36 @@ h6,
   padding: 0.8rem 1.7rem;
   font-size: 1.125rem;
   border-radius: 0.625rem;
+}
+
+.dest-prod-det-book-btn {
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.625rem;
+}
+
+.startDateform {
+  background-color: #f1f2fe !important;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.endDateform {
+  background-color: #f1f2fe !important;
+  padding: 10px 15px;
+  border-radius: 15px;
+}
+
+.dest-prod-det-wish-btn {
+  padding: 0.8rem 1.7rem;
+  border-radius: 0.625rem;
+  font-weight: 900;
+  margin-left: 1%;
+}
+
+.dest-prod-det-wish-btn:hover {
+  color: #E0115f;
+}
+
+.item-thumb {
+    margin: 0 5px;
 }
